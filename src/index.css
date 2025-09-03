@@ -1,1 +1,82 @@
 @import "tailwindcss";
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --navy-950: #0E1323;
+  --navy-900: Navy 900;
+  --purple-800: #33397A;
+  --navy-200: #BBC0FF;
+
+  --orange-300: #FF8B64;
+
+  --purple-700: #7335D2;
+  --purple-600: #5747EA;
+  --purple-500: #7078C9;
+
+  --blue-300: #55C2E6;
+  --red-400: #FF5E7D;
+  --green-400: #4BCF82;
+  --yellow-300: #F1C75B;
+  --grey-200: #D8D8D8;
+
+  --font-rubik: 'Rubik', sans-serif;
+}
+
+body {
+  font-family: var(--font-rubik);
+}
+
+
+.text-preset-1 {
+   @apply font-light text-[56px] leading-[66px];
+}
+
+.text-preset-2 {
+   @apply font-light text-[40px] leading-[47px];
+}
+
+.text-preset-3 {
+  @apply font-light text-[32px] leading-[38px];
+}
+
+.text-preset-4 {
+  @apply font-light text-2xl leading-[28px];
+}
+
+.text-preset-5-medium {
+  @apply font-medium text-[18px] leading-[21px];
+}
+
+.text-preset-5-regular {
+  @apply font-normal text-[18px] leading-[21px];
+}
+
+.text-preset-6 {
+  @apply font-normal text-[15px] leading-[18px];
+}
+
+.spacing-0 {
+  @apply space-x-0;
+}
+
+.spacing-100 {
+  @apply space-x-2;
+}
+
+.spacing-200 {
+  @apply space-x-4;
+}
+
+.spacing-300 {
+  @apply space-x-6;
+}
+
+.spacing-400 {
+  @apply space-x-8;
+}
+
+.spacing-500 {
+  @apply space-x-10;
+}
