@@ -61,7 +61,7 @@ const data = [
 
 function App() {
   return (
-    <div className='h-screen max-w-80 my-[81px] flex justify-center items-center w-full md:max-w-[622px] xl:max-w-[829px]'>
+    <div className='min-h-screen max-w-80 my-[81px] flex justify-center items-center w-full md:max-w-[622px] xl:max-w-[829px]'>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4 w-full'>
         <CardID color='var(--purple-600)' />
         {data.map((item) => (

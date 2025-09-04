@@ -8,7 +8,7 @@ export default function CardID({ color }) {
             <div className='w-16 h-16'>
                 <img src={avatar} alt='avatar' className='border-2 border-white rounded-full' />
             </div>
-            <div className='flex flex-col gap-1'>
+            <div className='id-content-text'>
                 <h1 className='text-white text-preset-6'>Report for</h1>
                 <h2 className='text-white text-preset-4'>Jeremy Robson</h2>
             </div>
