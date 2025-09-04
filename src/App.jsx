@@ -60,7 +60,7 @@ const data = [
 
 function App() {
   return (
-    <div className='h-screen max-w-80 flex justify-center items-center w-full md:max-w-[622px] xl:max-w-[829px]'>
+    <div className='h-screen max-w-80 my-[81px] flex justify-center items-center w-full md:max-w-[622px] xl:max-w-[829px]'>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4 w-full'>
         {data.map((item) => (
           <Card timeframe="daily" title={item.title} image={item.image} color={item.color} timeframe={item.timeframe} />
