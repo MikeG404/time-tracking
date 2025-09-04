@@ -68,11 +68,19 @@ function App() {
           grid-cols-1 
           md:grid-cols-3
           md:grid-rows-3
+          xl:grid-cols-4
+          xl:grid-rows-2
           gap-4 w-full'
         >
         <CardID color='var(--purple-600)' />
-        {data.map((item) => (
-          <Card timeframe="daily" title={item.title} image={item.image} color={item.color} timeframe={item.timeframe} />
+        {data.map((item, index) => (
+          <Card 
+            key={index}
+            title={item.title} 
+            image={item.image} 
+            color={item.color} 
+            timeframe={item.timeframe} 
+          />
         ))}
       </div>
     </div>
