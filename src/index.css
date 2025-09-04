@@ -9,15 +9,15 @@
   --purple-800: #33397A;
   --navy-200: #BBC0FF;
 
-  --orange-300: #FF8B64;
-
-  --purple-700: #7335D2;
+  
   --purple-600: #5747EA;
   --purple-500: #7078C9;
-
+  
+  --orange-300: #FF8B64;
   --blue-300: #55C2E6;
   --red-400: #FF5E7D;
   --green-400: #4BCF82;
+  --purple-700: #7335D2;
   --yellow-300: #F1C75B;
   --grey-200: #D8D8D8;
 
@@ -79,4 +79,29 @@ body {
 
 .spacing-500 {
   @apply space-x-10;
+}
+
+.grid-card {
+  width: 100%;
+  height: 244px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  grid-template-columns: repeat(3, 255px);
+}
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 188px);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    min-width: 255px;
+  }
 }
