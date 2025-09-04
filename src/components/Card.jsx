@@ -3,11 +3,11 @@ import ellipses from '/public/images/icon-ellipsis.svg'
 
 export default function Card({ image, title, timeframe, color }) {
   return (
-        <div className="flex flex-col rounded-2xl" style={{ backgroundColor: color }}>
-            <div className='flex justify-ends'>
-                <img src={image} alt={title} />
+        <div className="flex flex-col rounded-2xl min-h-[160px] -z-20" style={{ backgroundColor: color }}>
+            <div className='flex justify-ends relative h-[38px] -z-10 overflow-hidden'>
+                <img className='absolute -top-2 right-0' src={image} alt={title} />
             </div>
-            <div className='bg-blue-950 rounded-2xl p-6 gap-2'>
+            <div className='bg-blue-950 rounded-2xl p-6 gap-2 h-[122px]'>
                 <div className='flex justify-between items-center'>
                   <h3 className='text-white text-preset-5-medium'>{title}</h3>
                   <img src={ellipses} alt={title} />
